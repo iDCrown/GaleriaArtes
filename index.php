@@ -1,7 +1,7 @@
 <?php include("includes/header_front.php") ?>
 
     <div class="container-fluid">
-        <h1 class="text-center">Artículos</h1>
+        <!-- <h1 class="text-center">Artículos</h1>
         <div class="row">
        
             <div class="col-sm-4">
@@ -40,7 +40,7 @@
                 </div>
             </div>
       
-        </div>            
+        </div> -->            
     </div>
 <?php include("includes/footer.php") ?>
        

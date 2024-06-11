@@ -3,7 +3,7 @@
 
         //Parámetros base de datos
         private $host = 'localhost';
-        private $db_name = 'blog';
+        private $db_name = 'galeriaArte';
         private $username = 'root';
         private $password = '';
         private $conn;

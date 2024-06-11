@@ -14,13 +14,13 @@
 
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Blog PHP 8</title>
+    <title>Galería de arte</title>
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.php">Blog PHP 8</a>
+            <a class="navbar-brand" href="../index.php">Galería de arte</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,50 +29,28 @@
                       
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Administración
+                            Registros
                         </a>
                        
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                            <a class="dropdown-item" href="admin/articulos.php">Artículos</a>
+                            <a class="dropdown-item" href="admin/obras.php">Obras de arte</a>
                             </li>
                             <li>
-                            <a class="dropdown-item" href="admin/comentarios.php">Comentarios</a>
+                            <a class="dropdown-item" href="admin/artistas.php">Artistas</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="admin/compradores.php">Compradores</a>
+                            </li>
+                            </li>                        
+                            <li>
+                            <a class="dropdown-item" href="admin/ofertas.php">Ofertas</a>
                             </li>                        
                         </ul>
-                       
-                    </li> 
 
-                   
-
-                     <li class="nav-item">
-                            <a class="nav-link" href="admin/usuarios.php">Usuarios</a>
-                      </li> 
-                       
+                    </li>
                 </ul>  
-
-                <ul class="navbar-nav mb-2 mb-lg-0">                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Inicio</a>
-                        </li> 
-                   
-                            <li class="nav-item">
-                                <a class="nav-link" href="registro.php">Registrarse</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="acceder.php">Acceder</a>
-                            </li>
-                   
-
-                       
-                          <li class="nav-item">
-                              <p class="text-white mt-2"><i class="bi bi-person-circle"></i> </p>
-                          </li>
-                          <li class="nav-item">
-                                <a class="nav-link" href="salir.php">Salir</a>
-                            </li>  
-                                 
-                    </ul>    
+  
             </div>
         </div>
     </nav>
@@ -85,24 +63,24 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../blog/img/slides/santorini1.jpg" class="d-block w-100" alt="...">
+      <img src="../galeriaArte/img/slides/Gio.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block caja2">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5>LA GIOCONDA</h5>
+        <p>Obra de arte del Italiano Leonardo da Vinvi</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../blog/img/slides/florencia.jpg" class="d-block w-100" alt="...">
+      <img src="../galeriaArte/img/slides/starry.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block caja2" >
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h5>THE STARRY NIGHT O LA NOCHE ESTRELLADA</h5>
+        <p>Obra de arte del neerlandes Vincent van Gogh</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../blog/img/slides/venecia.jpg" class="d-block w-100" alt="...">
+      <img src="../galeriaArte/img/slides/cena.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block caja2">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h5>LA ÚLTIMA CENA</h5>
+        <p>Obra de arte del Italiano Leonardo da Vinci y restaurada por Enrique Cabrera</p>
       </div>
     </div>
   </div>
@@ -117,4 +95,3 @@
 </div>
 
     <div class="container mt-5">
-       

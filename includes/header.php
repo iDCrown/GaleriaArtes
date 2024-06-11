@@ -1,6 +1,9 @@
 <?php include("../config/Basemysql.php")?>
 <?php include("../config/config.php")?>
-<?php include("../models/articulo.php")?>
+<?php include("../models/obra.php")?>
+<?php include("../models/artista.php")?>
+<?php include("../models/comprador.php")?>
+<?php include("../models/oferta.php")?>
 
 <!doctype html>
 <html lang="es">
@@ -18,13 +21,13 @@
 
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Blog PHP 8</title>
+    <title>Galería de arte</title>
     </head>
     <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Blog PHP 8</a>
+            <a class="navbar-brand" href="../index.php">Galería de arte</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,51 +38,25 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Administración
+                            Registros
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                            <a class="dropdown-item" href="articulos.php">Artículos</a>
+                            <a class="dropdown-item" href="obras.php">Obras de arte</a>
                             </li>
                             <li>
-                            <a class="dropdown-item" href="comentarios.php">Comentarios</a>
+                            <a class="dropdown-item" href="artistas.php">Artistas</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="compradores.php">Compradores</a>
+                            </li>                        
+                            <li>
+                            <a class="dropdown-item" href="ofertas.php">Ofertas</a>
                             </li>                        
                         </ul>
                     </li>
-
-                    
-
-                    <li class="nav-item">
-                            <a class="nav-link" href="usuarios.php">Usuarios</a>
-                      </li>  
-                      
                 </ul>
-
-                <ul class="navbar-nav mb-2 mb-lg-0">                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.php">Inicio</a>
-                        </li>
-                      
-                            <li class="nav-item">
-                                <a class="nav-link" href="../registro.php">Registrarse</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../acceder.php">Acceder</a>
-                            </li>
-                      
-                         
-                          <li class="nav-item">
-                              <p class="text-white mt-2"><i class="bi bi-person-circle"></i></p>
-                          </li>
-                          <li class="nav-item">
-                                <a class="nav-link" href="../salir.php">Salir</a>
-                            </li>  
-                                
-                    </ul> 
-                      
             </div>
         </div>
     </nav>  
-
     <div class="container mt-5 caja">
-       

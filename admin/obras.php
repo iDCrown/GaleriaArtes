@@ -4,8 +4,8 @@
     $baseDatos = new Basemysql();
     $db = $baseDatos->connect();
 
-    $articulos = new Articulo($db);
-    $resultado = $articulos->leer();
+    $obras = new Obra($db);
+    $resultado = $obras->leer();
 ?>
 
 <div class="row">
@@ -21,39 +21,37 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <h3>Lista de Artículos</h3>
+        <h3>Lista de Obras</h3>
     </div> 
     <div class="col-sm-4 offset-2">
-        <a href="crear_articulo.php" class="btn btn-success w-100"><i class="bi bi-plus-circle-fill"></i> Nuevo Artículo</a>
+        <a href="crear_obra.php" class="btn btn-success w-100"><i class="bi bi-plus-circle-fill"></i> Nueva Obra</a>
     </div>    
 </div>
 <div class="row mt-2 caja">
     <div class="col-sm-12">
-            <table id="tblArticulos" class="display" style="width:100%">
+            <table id="tblObras" class="display" style="width:100%">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Titulo</th>
-                        <th>Imagen</th> 
-                        <th>Texto</th>
-                        <th>Fecha de creación</th>              
+                        <th>Artista</th> 
+                        <th>Estilo</th>
+                        <th>Precio de Salida</th>              
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                <?php foreach ($resultado as $articulo) : ?>
+                <?php foreach ($resultado as $obra) : ?>
             
                     <tr>
-                        <td><?php echo $articulo->id; ?></td>
-                        <td><?php echo $articulo->titulo; ?></td>
+                        <td><?php echo $obra->id_obra; ?></td>
+                        <td><?php echo $obra->titulo; ?></td>
+                        <td><?php echo $obra->nombre_artista; ?></td>
+                        <td><?php echo $obra->estilo;?></td>
+                        <td><?php echo $obra->precio_salida;?></td>                      
                         <td>
-                            <img class="img-fluid" src="<?php echo "img/articulos/" . $articulo->imagen; ?>" style="width:180px;">
-                        </td>
-                        <td><?php echo $articulo->texto;?></td>
-                        <td><?php echo $articulo->fecha_creacion;?></td>                      
-                        <td>
-                        <a href="editar_articulo.php?id=<?php echo $articulo->id;?>"  class="btn btn-warning"><i class="bi bi-pencil-fill"></i></a>                       
+                        <a href="editar_obra.php?id=<?php echo $obra->id_obra;?>"  class="btn btn-warning"><i class="bi bi-pencil-fill"></i></a>                       
                         </td>
                     </tr>
                     <?php endforeach; ?>
@@ -66,6 +64,6 @@
 
 <script>
     $(document).ready( function () {
-        $('#tblArticulos').DataTable();
+        $('#tblObras').DataTable();
     });
 </script>
